@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/silver-umbrella/static/css/main.073c9b0a.css",
+    "main.js": "/silver-umbrella/static/js/main.550c2620.js",
+    "static/js/787.8dd5a7b6.chunk.js": "/silver-umbrella/static/js/787.8dd5a7b6.chunk.js",
+    "static/media/logo.svg": "/silver-umbrella/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/silver-umbrella/index.html",
+    "main.073c9b0a.css.map": "/silver-umbrella/static/css/main.073c9b0a.css.map",
+    "main.550c2620.js.map": "/silver-umbrella/static/js/main.550c2620.js.map",
+    "787.8dd5a7b6.chunk.js.map": "/silver-umbrella/static/js/787.8dd5a7b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.550c2620.js"
+  ]
+}
