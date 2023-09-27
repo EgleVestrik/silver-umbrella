@@ -5,7 +5,7 @@ import Show from "./components/Show"
 import Maths from "./components/Maths"
 import MyForm from "./components/MyForm"
 
-function App() {
+function App( {
   const [show, setShow] = useState(true)
 
   const toggleShow = () => setShow(previousShow => !previousShow)
