@@ -5,7 +5,7 @@ const Maths = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <>...muudatus
       <h2>{count}</h2>
       <Button
         variant="contained"
@@ -23,7 +23,7 @@ const Maths = () => {
         Press me async +10
       </Button>
     </>
-  )
+  
 }
 
 export default Maths
