@@ -7,6 +7,7 @@ import MyForm from "./components/MyForm"
 import PropDrilling from "./components/PropDrilling"
 import Context from "./components/Context"
 import Fetching from "./components/Fetching"
+import Menu from "./components/Menu"
 
 function App() {
   const [show, setShow] = useState(true)
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="Container">
+      <Menu />
       <h1>Egle</h1>
       <Fetching />
       <PropDrilling />
