@@ -1,31 +1,37 @@
-import { useState } from "react"
+import { ThemeProvider, createTheme } from "@mui/material/styles"
 import "./App.css"
-import Toggle from "./components/Toggle"
-import Show from "./components/Show"
-import Maths from "./components/Maths"
-import MyForm from "./components/MyForm"
-import PropDrilling from "./components/PropDrilling"
-import Context from "./components/Context"
-import Fetching from "./components/Fetching"
-import Menu from "./components/Menu"
+//import Layout from "./layout/Layout"
+import { Outlet } from "react-router-dom"
+import Header from "./Header"
+import { useLocation } from "react-router-dom"
+import { Typography } from "@mui/material"
+
+const theme = createTheme({
+  palette: {
+    mode: "light",
+    primary: {
+      main: "rgb(254, 217, 255)"
+    }
+  }
+})
 
 function App() {
-  const [show, setShow] = useState(true)
-
-  const toggleShow = () => setShow(previousShow => !previousShow)
+  let location = useLocation()
 
   return (
-    <div className="Container">
-      <Menu />
-      <h1>Egle</h1>
-      <Fetching />
-      <PropDrilling />
-      <Context />
-      <MyForm />
-      <Maths />
-      <Show show={show} />
-      <Toggle toggleShow={toggleShow} />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Header title="ideal-potato" />
+
+      {location?.pathname === "/" && (
+        <Typography
+          variant="h4"
+          sx={{ marginLeft: 10, marginTop: 5 }}
+        >
+          Welcome to my humble abode
+        </Typography>
+      )}
+      <Outlet />
+    </ThemeProvider>
   )
 }
 
